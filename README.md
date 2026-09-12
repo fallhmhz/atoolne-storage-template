@@ -4,6 +4,10 @@
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/fallhmhz/atoolne-storage-template)
 
+> **这是 R2 版。开通 R2 需要绑一张能在境外网站付款的卡**（双币卡或 PayPal），境内纯银联卡通常刷不过。
+> 没有卡的话用 **[KV 版](https://github.com/fallhmhz/atoolne-storage-kv)** —— 免绑卡，免费 1 GB、单个文件 25 MB。
+> 两个版本在 atoolne 里用法完全一样，分享出去的链接也一样。
+
 ## 先分清两个仓库
 
 - **这个 Public 仓库**是公开模板，只负责提供部署程序。
@@ -11,7 +15,7 @@
 
 如果你现在看到的仓库是 Private，而且第一条提交来自 `cloudflare[bot]`，说明它已经是你的个人副本，**不用再点一次 Deploy to Cloudflare**。
 
-文件不会存在 GitHub 里。图片、字体和 CSS 都保存在你自己的 Cloudflare R2；`UPLOAD_KEY` 保存在 Cloudflare Secret，并在 atoolne 中加密保存。
+文件不会存在 GitHub 里。图片、字体和 CSS 都保存在你自己的 Cloudflare R2（KV 版则是 Workers KV）；`UPLOAD_KEY` 保存在 Cloudflare Secret，并在 atoolne 中加密保存。
 
 ## 部署
 
